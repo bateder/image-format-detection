@@ -75,7 +75,9 @@ const ieVersions = {
 
 Object.keys(ieVersions).forEach(version => {
   test(`IE ${version}`, () => {
-    const {imageFormats, userAgent} = ieVersions[version]
-    expect(getImageFormats(userAgent)).toBe(imageFormats)
+    const {imageFormats: expectedImageFormats, userAgent} = ieVersions[version]
+    const imageFormats = getImageFormats(userAgent)
+
+    expect(imageFormats).toEqual(expectedImageFormats)
   })
 })

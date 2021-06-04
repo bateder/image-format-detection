@@ -1,5 +1,3 @@
-function getImageFormats(userAgent) {
-  return {}
-}
+import {getImageFormats} from './getImageFormats'
 
 export default getImageFormats
