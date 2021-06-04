@@ -4,7 +4,8 @@
   "description": "Image format detection",
   "main": "lib/index.js",
   "scripts": {
-    "test": ""
+    "test:watch": "jest --watch",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,21 @@
   "bugs": {
     "url": "https://github.com/bateder/image-format-detection/issues"
   },
-  "homepage": "https://github.com/bateder/image-format-detection#readme"
+  "homepage": "https://github.com/bateder/image-format-detection#readme",
+  "devDependencies": {
+    "@babel/core": "7.14.3",
+    "@babel/preset-env": "7.14.4",
+    "@s-ui/lint": "3",
+    "babel-jest": "27.0.2",
+    "jest": "27.0.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "prettier": "./node_modules/@s-ui/lint/.prettierrc.js",
+  "stylelint": {
+    "extends": "./node_modules/@s-ui/lint/stylelint.config.js"
+  }
 }
