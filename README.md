@@ -1,6 +1,9 @@
-# image-format-detection
+# WIP image-format-detection
 
-## TODO: 
+⚠️ Package not released
+
+## Pending format detections: 
+- [X] Internet Explorer
 - [ ] Edge
 - [ ] Chrome
 - [ ] Chrome Mobile
