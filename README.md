@@ -4,7 +4,7 @@
 
 ## Pending format detections: 
 - [X] Internet Explorer
-- [ ] Edge
+- [X] Edge
 - [ ] Chrome
 - [ ] Chrome Mobile
 - [ ] Firefox
