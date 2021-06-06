@@ -1,7 +1,10 @@
 import parser from 'ua-parser-js'
 import dictionary from './dictionary'
 
-export function getImageFormats(userAgent) {
+const defaultUserAgent =
+  typeof window !== 'undefined' && window.navigator.userAgent
+
+export function getImageFormats(userAgent = defaultUserAgent) {
   const ua = parser(userAgent)
 
   const {
