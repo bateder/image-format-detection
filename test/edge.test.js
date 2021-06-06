@@ -1,4 +1,4 @@
-import getImageFormats from '../out.js'
+import getImageFormats from '../src'
 
 const notCompatibleVersions = {
   avif: false,
